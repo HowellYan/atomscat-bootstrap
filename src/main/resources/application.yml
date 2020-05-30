@@ -3,7 +3,16 @@ spring:
     name: atomscat-bootstrap
   main:
     allow-bean-definition-overriding: true
+  redis:
+    host: 127.0.0.1
+    password: admin123456
+    database: 1
+    port: 6379
 
 dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
+
+elastic-job:
+  servers: 127.0.0.1:2181
+  namespace: atomscat_elastic_job
